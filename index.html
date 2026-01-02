@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Rimba</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#project">Project</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="content">
+        <h1>Halo, Saya Rimba 👋</h1>
+        <p>Mahasiswa Universitas Pamulang - Jurusan Sistem Informasi</p>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="section">
+      <div class="content">
+        <h2>Profil Saya</h2>
+        <div class="profile-box">
+          <img src="media/Mypp.jpg" />
+          <p>
+            Saya adalah individu yang tertarik pada dunia teknologi, khususnya
+            pengembangan web. Saya fokus mempelajari HTML, CSS, dan JavaScript
+            untuk membuat website yang menarik, responsif, dan mudah digunakan.
+            Saya selalu berusaha belajar dan berkembang agar dapat menghasilkan
+            karya yang lebih baik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project" class="section alt">
+      <div class="content">
+        <h2>Project</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="media/projek1.png" />
+            <h3>Aplikasi Data Mahasiswa</h3>
+          </div>
+          <div class="card">
+            <img src="media/projek2.png" />
+            <h3>Aplikasi Hitung Belanja</h3>
+          </div>
+          <div class="card">
+            <img src="media/projek3.png" />
+            <h3>Web Sederhana</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDIA -->
+    <section id="media" class="section">
+      <div class="content">
+        <h2>Media</h2>
+
+        <!-- SUB MENU -->
+        <div class="media-menu">
+          <button class="active" onclick="showMedia('foto')">Foto</button>
+          <button onclick="showMedia('video')">Video</button>
+          <button onclick="showMedia('audio')">Audio</button>
+          <button onclick="showMedia('dokumen')">Dokumen</button>
+        </div>
+
+        <!-- FOTO -->
+        <div id="foto" class="media-content active">
+          <div class="grid">
+            <div class="card">
+              <img src="media/rimba.jpeg" />
+              <p>Foto Saya</p>
+            </div>
+            <div class="card">
+              <img src="media/unpam.jpg" />
+              <p>Foto Unpam Viktor</p>
+            </div>
+            <div class="card">
+              <img src="media/kucing.jpg" />
+              <p>Foto Kucing</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEO -->
+        <div id="video" class="media-content">
+          <div class="grid">
+            <div class="card">
+              <video controls src="media/Ikan.mp4"></video>
+              <p>Ikan Koi</p>
+            </div>
+            <div class="card">
+              <video controls src="media/Ikan.mp4"></video>
+              <p>Ikan Koi</p>
+            </div>
+            <div class="card">
+              <video controls src="media/Ikan.mp4"></video>
+              <p>Ikan Koi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AUDIO -->
+        <div id="audio" class="media-content">
+          <div class="grid">
+            <div class="card">
+              <audio controls src="media/My_Love.mp3"></audio>
+              <p>Mitski - My Love Mine All Mine</p>
+            </div>
+            <div class="card">
+              <audio controls src="media/My_Love.mp3"></audio>
+              <p>Mitski - My Love Mine All Mine</p>
+            </div>
+            <div class="card">
+              <audio controls src="media/My_Love.mp3"></audio>
+              <p>Mitski - My Love Mine All Mine</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOKUMEN -->
+        <div id="dokumen" class="media-content">
+          <div class="card doc">
+            <a href="media/Serti Seminar SI 2025.pdf" target="_blank"
+              >📄 Sertifikat Seminar SI</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="content">
+        <h2>Kontak Saya</h2>
+        <p>Email: rimbasmoro149@email.com</p>
+        <p>WhatsApp: 085771612864</p>
+        <a href="mailto:rimba@email.com" class="btn">Hubungi Saya</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Rimba Asmoro • All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

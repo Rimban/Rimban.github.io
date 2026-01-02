@@ -1,0 +1,223 @@
+:root {
+  --primary: #7b4f2c;
+  --secondary: #b08968;
+  --accent: #d4a373;
+  --bg: #faf7f2;
+  --dark: #3e2a1c;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", "Times New Roman", serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--dark);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 40px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+}
+
+nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  opacity: .9;
+}
+
+nav a.active,
+nav a:hover {
+  opacity: 1;
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
+}
+
+/* ================= SECTION ================= */
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 30px 80px;
+  text-align: center;
+}
+
+.alt {
+  background: linear-gradient(180deg, #f3ede5, #faf7f2);
+}
+
+
+/* ================= CONTENT ================= */
+.content {
+  max-width: 1100px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ================= HERO ================= */
+.hero h1 {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin-top: 16px;
+  font-size: 20px;
+  opacity: .85;
+}
+
+/* ================= PROFILE ================= */
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-box img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+/* ================= GRID & CARD ================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.12);
+  transition: transform .4s, box-shadow .4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0,0,0,.2);
+}
+
+.card img,
+.card video {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* ================= MEDIA MENU ================= */
+.media-menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.media-menu button {
+  padding: 10px 26px;
+  border-radius: 30px;
+  border: none;
+  background: #efe6da;
+  color: var(--dark);
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.media-menu button.active,
+.media-menu button:hover {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: white;
+}
+
+/* ================= MEDIA CONTENT ================= */
+.media-content {
+  display: none;
+}
+
+.media-content.active {
+  display: block;
+}
+
+/* ================= CONTACT ================= */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 40px;
+  font-size: 18px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  text-align: center;
+  padding: 25px;
+  color: white;
+  font-size: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 28px; }
+  p  { font-size: 16px; }
+
+  nav a {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+}
